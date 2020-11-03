@@ -13,5 +13,10 @@ docker pull pujunhao/anydoor
 2. Run docker container
 
 ```
-docker run -p 18080-18100:8080-8100 -it pujunhao/anydoor
+docker run -it pujunhao/anydoor
 ```
+
+3. Update docker image
+
+```
+docker build -t pujunhao/anydoor .
