@@ -13,7 +13,7 @@ docker pull pujunhao/anydoor
 2. Run docker container
 
 ```
-docker run -it pujunhao/anydoor
+docker run -it --cpus=2 pujunhao/anydoor
 ```
 
 3. Update docker image
