@@ -9,5 +9,5 @@ RUN apk update \
     && npm i -g yarn \
     && yarn global add typescript eslint tslint serverless \
     && sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" \
-    && chmod 400 ~/.ssh/id_rsa ~/workspace/db/*.pem \
-    && cd /root/workspace
+    && cd /root/workspace \
+    && chmod 400 ~/.ssh/id_rsa ~/workspace/db/*.pem
