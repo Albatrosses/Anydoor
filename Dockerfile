@@ -1,6 +1,4 @@
 FROM alpine
-COPY /db /root/workspace/db
-COPY /git /root/.ssh
 RUN apk update \ 
     && apk add --update git mysql mysql-client nodejs npm zsh openssh bash sudo \
     && git config --global user.name Albatrosses \
@@ -9,5 +7,4 @@ RUN apk update \
     && npm i -g yarn \
     && yarn global add typescript eslint tslint serverless \
     && sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" \
-    && cd /root/workspace \
-    && chmod 400 ~/.ssh/id_rsa ~/workspace/db/*.pem
+    && cd /root/workspace
