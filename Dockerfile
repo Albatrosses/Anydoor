@@ -1,7 +1,7 @@
 FROM alpine
 COPY /git /root/.ssh
 RUN apk update \ 
-    && apk add --update git mysql mysql-client nodejs npm zsh openssh bash sudo \
+    && apk add --update git mysql mysql-client nodejs npm zsh openssh bash sudo node-gyp python3 \
     && git config --global user.name Albatrosses \
     && git config --global user.email capitalism_4418@163.com \
     && git config --global credential.helper store \
