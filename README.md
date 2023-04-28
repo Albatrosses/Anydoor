@@ -13,7 +13,7 @@ docker pull pujunhao/anydoor
 2. Run local docker container
 
 ```
-docker run -it -v D:\Developer\Workspace\container:/root/workspace pujunhao/anydoor
+docker run -it -v ~/Workspace/Private/volume:/root/workspace pujunhao/anydoor
 ```
 
 3. Update local docker image
